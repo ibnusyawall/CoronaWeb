@@ -5,6 +5,6 @@ covid = COVID()
 covid.get()
 terkonfirmasi = covid.getConfirmed(country=negara)
 for data in terkonfirmasi:
-    print ("Negara: " + data["country"]) # Mengambil nama negara
-    print ("Terkonfirmasi: " + str(data["confirmed"])) # Mengambil jumlah yang terkonfirmasi
-    print ("-" * 25) # Garis
+    print ("Negara: " + data["country"])               # Take the name of the country
+    print ("Terkonfirmasi: " + str(data["confirmed"])) # Retrieving confirmed data
+    print ("-" * 25)

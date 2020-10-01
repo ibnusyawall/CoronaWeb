@@ -4,9 +4,10 @@ covid = COVID()
 covid.get()
 semua = covid.all
 for data in semua:
-    print ("Negara: " + data["country"]) # Mengambil nama negara
-    print ("Aktif : " + str(data["active"])) # Mengambil jumlah yang aktif
-    print ("Meninggal: " + str(data["deaths"])) # Mengambil jumlah yang meninggal
-    print ("Sembuh: " + str(data["recovered"])) # Mengambil jumlah yang sembuh
-    print ("Terkonfirmasi: " + str(data["confirmed"])) # Mengambil jumlah yang terkonfirmasi
-    print ("-" * 25) # Garis
+    # Retrieves all corona data
+    print ("Negara: " + data["country"])
+    print ("Aktif : " + str(data["active"]))
+    print ("Meninggal: " + str(data["deaths"]))
+    print ("Sembuh: " + str(data["recovered"]))
+    print ("Terkonfirmasi: " + str(data["confirmed"]))
+    print ("-" * 25)
